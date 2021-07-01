@@ -83,9 +83,6 @@ const menu = [
 
 
 
-
-
-
 const toggleIcon = document.querySelector('.toggle-icons');
 const mobileNav = document.querySelector('.mobile-nav');
 const mobToggle = document.querySelector('.mob-toggle');
@@ -108,33 +105,32 @@ mobLink.forEach(btn => {
 
 
 window.addEventListener('DOMContentLoaded', function(){
-   addItem(item)
-
+ 
+    menu.forEach(function addItem(item){
+        const sectionCenter = document.querySelector('.section-center');
+        const dishes = document.createElement('article');
+        dishes.className = 'menu-item';
+    
+        dishes.innerHTML = 
+            `<div class="photo-container">
+                <img src=${item.img} class="photo" alt=${item.title}>
+            </div>
+            <div class="item-info">
+                <header class= "flex-row">
+                    <h5>${item.title}</h5>
+                    <h5 class="price">$${item.price}</h5>
+                    <button class="add-cart"></button>
+                </header>
+                <p class="item-text">${item.desc}</p>
+            </div>`
+    
+        sectionCenter.appendChild(dishes);
+    });
 });
 
 
 
 
-menu.forEach(function addItem(item){
-    const sectionCenter = document.querySelector('.section-center');
-    const dishes = document.createElement('article');
-    dishes.className = 'menu-item';
-
-    dishes.innerHTML = 
-        `<div class="photo-container">
-            <img src=${item.img} class="photo" alt=${item.title}>
-        </div>
-        <div class="item-info">
-            <header class= "flex-row">
-                <h5>${item.title}</h5>
-                <h5 class="price">$${item.price}</h5>
-                <button class="add-cart"></button>
-            </header>
-            <p class="item-text">${item.desc}</p>
-        </div>`
-
-    sectionCenter.appendChild(dishes);
-});
 
 
 window.addEventListener('scroll', function(){
