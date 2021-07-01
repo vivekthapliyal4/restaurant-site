@@ -68,6 +68,7 @@ button.btn {
 
 body {
   background: var(--background-primary);
+  font-family: var(--poppins);
 }
 
 .flex-row {
@@ -82,7 +83,7 @@ body {
 }
 
 .container-custom {
-  padding: 0 10vw;
+  padding: 5vh 10vw;
   justify-content: center;
   align-items: center;
 }
@@ -472,7 +473,7 @@ main
   .add-cart::before {
   content: "+";
   position: absolute;
-  top: -34%;
+  top: -20%;
   left: 16%;
 }
 
@@ -657,6 +658,60 @@ main .reservation .container-custom .form-wrapper .btn-reservation:hover {
   color: var(--primary-color);
 }
 
+
+/* END MAIN CONTENT */
+
+/* FOOTER CONTENT */
+
+footer.footer{
+    background: #0f0f0f;
+    color: var(--white);
+    align-items: center;
+    height: 100%;
+}
+
+footer.footer .container-custom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem 5rem;
+}
+
+
+footer.footer .container-custom .footer-item{
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 100%;
+
+}
+
+footer.footer .container-custom .footer-item p{
+    color: var(--text-grey);
+}
+
+footer.footer .container-custom .insta-img img{
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    margin: .2rem;
+}
+
+footer.footer .container-custom .follow i{
+  transform: scale(1.5);
+  padding: 1rem .5rem;
+  color: var(--text-grey);
+}
+
+footer.footer .container-custom .follow i:hover{
+  color: var(--primary-color);
+}
+
+footer.footer .rights{
+  padding: 1rem;
+  color: var(--text-grey);
+}
+
+
 /* media queries */
 
 @media only screen and (max-width: 1360px) {
@@ -746,5 +801,10 @@ main .reservation .container-custom .form-wrapper .btn-reservation:hover {
 
   main .menu .container-custom .section-center {
     grid-template-columns: 1fr;
+  }
+
+  footer.footer .container-custom{
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
   }
 }
