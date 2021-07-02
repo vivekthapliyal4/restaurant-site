@@ -82,6 +82,7 @@ const menu = [
 ];
 
 
+// MOBLIE NAVIGATION SLIDER
 
 const toggleIcon = document.querySelector('.toggle-icons');
 const mobileNav = document.querySelector('.mobile-nav');
@@ -94,15 +95,17 @@ function toggleActive(){
 }
 
 
-toggleIcon.addEventListener('click', toggleActive)
+toggleIcon.addEventListener('click', toggleActive);
 
-mobToggle.addEventListener('click', toggleActive)
+mobToggle.addEventListener('click', toggleActive);
 
 mobLink.forEach(btn => {
     btn.addEventListener('click', toggleActive)
 });
 
 
+
+// ADDING MENU ITEMS
 
 window.addEventListener('DOMContentLoaded', function(){
  
@@ -117,8 +120,8 @@ window.addEventListener('DOMContentLoaded', function(){
             </div>
             <div class="item-info">
                 <header class= "flex-row">
-                    <h5>${item.title}</h5>
-                    <h5 class="price">$${item.price}</h5>
+                    <h4>${item.title}</h4>
+                    <h4 class="price">$${item.price}</h4>
                     <button class="add-cart"></button>
                 </header>
                 <p class="item-text">${item.desc}</p>
@@ -130,14 +133,37 @@ window.addEventListener('DOMContentLoaded', function(){
 
 
 
-
-
+// NAVBAR SCROLL EFFECT 
 
 window.addEventListener('scroll', function(){
     let header = this.document.querySelector('.nav');
     let windowPositon = window.scrollY > 0;
-    header.classList.toggle('scroll-active', windowPositon)
+    header.classList.toggle('scroll-active', windowPositon);
 });
+
+
+// IMAGE SLIDESHOW
+
+var i = 0;
+var images = [];
+var time = 3000;
+
+images[0] = 'img/slide-1.jpg';
+images[1] = 'img/slide-2.jpg';
+images[2] = 'img/slide-3.jpg';
+
+function changeImg(){
+    document.slide.src = images[i];
+    if(i < images.length -1){
+        i++;
+    }else{
+        i = 0;
+    }
+
+   setTimeout('changeImg()', time);
+}
+
+window.onload = changeImg;
 
 
 

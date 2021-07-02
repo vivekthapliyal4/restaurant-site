@@ -26,7 +26,7 @@
 /* Global styling */
 
 html {
-  scroll-behavior: "smooth";
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -53,11 +53,17 @@ h1 {
 h2 {
   font-size: 2rem;
   font-family: var(--poppins);
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.5rem;
   font-family: var(--poppins);
+}
+
+h4{
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 p {
@@ -345,7 +351,7 @@ main .about .location {
   padding: 20vh 0;
 }
 
-main .about .location .carousel {
+main .about .location img{
   width: 50%;
 }
 
@@ -477,8 +483,8 @@ main
   .add-cart::before {
   content: "+";
   position: absolute;
-  top: -20%;
-  left: 16%;
+  top: -2%;
+  left: 20%;
 }
 
 main 
@@ -590,9 +596,13 @@ main .reservation .container-custom .form-wrapper form .form-row input:focus {
 main .reservation .container-custom .form-wrapper .btn-reservation {
   border: none;
   background: var(--black);
+  font-family: var(--poppins);
+  font-size: 1rem;
   color: var(--white);
-  padding: 0.5rem;
+  padding: .7rem;
+  margin-top: 2rem;
   transition: 0.3s;
+  width: 100%;
 }
 
 main .reservation .container-custom .form-wrapper .btn-reservation:hover {
@@ -607,6 +617,7 @@ main .reservation .container-custom .form-wrapper .btn-reservation:hover {
   color: var(--text-grey);
   font-family: var(--poppins);
   pointer-events: none;
+  font-size: 1rem;
 }
 
 #time::before {
@@ -615,6 +626,7 @@ main .reservation .container-custom .form-wrapper .btn-reservation:hover {
   color: var(--text-grey);
   font-family: var(--poppins);
   pointer-events: none;
+  font-size: 1rem;
 }
 
 /* CONTACT */
@@ -648,6 +660,10 @@ main .reservation .container-custom .form-wrapper .btn-reservation:hover {
   color: var(--primary-color);
 }
 
+.contact-item h3{
+  color: var(--text-grey);
+}
+
 .socials {
   margin: 0 auto;
 }
@@ -668,6 +684,7 @@ main .reservation .container-custom .form-wrapper .btn-reservation:hover {
 /* FOOTER CONTENT */
 
 footer.footer{
+    position: relative;
     background: #0f0f0f;
     color: var(--white);
     align-items: center;
@@ -793,7 +810,7 @@ footer.footer .rights{
     flex-direction: column;
   }
 
-  main .about .location .carousel,
+  main .about .location img,
   main .about .location .address {
     width: 100%;
   }
