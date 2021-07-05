@@ -358,7 +358,6 @@ main .about .location img{
 main .about .location .address {
   font-family: var(--poppins);
   color: var(--white);
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
