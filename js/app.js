@@ -122,7 +122,7 @@ window.addEventListener('DOMContentLoaded', function(){
                 <header class= "flex-row">
                     <h4>${item.title}</h4>
                     <h4 class="price">$${item.price}</h4>
-                    <button class="add-cart"></button>
+                    <div class="add-cart"><button>+</button></div>
                 </header>
                 <p class="item-text">${item.desc}</p>
             </div>`

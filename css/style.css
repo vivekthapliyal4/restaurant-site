@@ -61,7 +61,7 @@ h3 {
   font-family: var(--poppins);
 }
 
-h4{
+h4 {
   font-size: 1.25rem;
   font-weight: 500;
 }
@@ -78,7 +78,6 @@ button.btn {
   font-size: 1rem;
   cursor: pointer;
 }
-
 
 .flex-row {
   display: flex;
@@ -351,7 +350,7 @@ main .about .location {
   padding: 20vh 0;
 }
 
-main .about .location img{
+main .about .location img {
   width: 50%;
 }
 
@@ -403,72 +402,61 @@ main .menu .container-custom .section-center {
 }
 
 main .menu .container-custom .section-center .menu-item {
-    display: grid;
-    grid-template-columns: 35% 65%;
+  display: grid;
+  grid-template-columns: 35% 65%;
 }
-
 
 main .menu .container-custom .section-center .menu-item .photo-container {
-    height: 150px;
-    overflow: hidden;
-    border: 0.3rem solid var(--primary-color);
-    border-radius: 5px;
+  height: 150px;
+  overflow: hidden;
+  border: 0.3rem solid var(--primary-color);
+  border-radius: 5px;
 }
 
-main 
-.menu 
-.container-custom 
-.section-center 
-.menu-item 
-.photo-container 
-.photo {
-    width: 100%;
-    height: inherit;
-    object-fit: cover;
-    transition: 0.3s ease-in-out;
+main
+  .menu
+  .container-custom
+  .section-center
+  .menu-item
+  .photo-container
+  .photo {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
 }
 
-main 
-.menu 
-.container-custom 
-.section-center 
-.menu-item 
-.photo-container 
-.photo:hover {
-    transform: scale(1.2);
+main
+  .menu
+  .container-custom
+  .section-center
+  .menu-item
+  .photo-container
+  .photo:hover {
+  transform: scale(1.2);
 }
 
-main 
-.menu 
-.container-custom 
-.section-center 
-.menu-item 
-.item-info 
-header {
+main .menu .container-custom .section-center .menu-item .item-info header {
   text-transform: capitalize;
   justify-content: space-between;
   border-bottom: 0.25px var(--text-grey) dotted;
 }
 
-main 
-.menu 
-.container-custom 
-.section-center 
-.menu-item
-.item-info 
-header 
-.add-cart {
-  position: relative;
-  border: none;
+main
+  .menu
+  .container-custom
+  .section-center
+  .menu-item
+  .item-info
+  header
+  .add-cart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   border-radius: 50%;
-  background-color: #ffc403;
-  text-align: center;
-  color: var(--white);
-  font-size: 2.5rem;
-  padding: 0.8rem;
+  background: #ffc403;
   height: 2.5rem;
   width: 2.5rem;
-  margin-bottom: 0.5rem;
   box-shadow: var(--text-grey) 1px 2px 10px;
 }
 
@@ -479,36 +467,30 @@ main
   .menu-item
   .item-info
   header
-  .add-cart::before {
-  content: "+";
-  position: absolute;
-  top: -2%;
-  left: 20%;
+  .add-cart
+  button {
+  color: var(--white);
+  background: transparent;
+  border: none;
+  font-size: 2rem;
 }
 
-main 
-.menu 
-.container-custom 
-.section-center 
-.menu-item 
-.item-info {
+main .menu .container-custom .section-center .menu-item .item-info {
   padding: 0 3rem;
 }
 
-main 
-.menu 
-.container-custom 
-.section-center 
-.menu-item 
-.item-info 
-header 
-.price {
+main
+  .menu
+  .container-custom
+  .section-center
+  .menu-item
+  .item-info
+  header
+  .price {
   color: var(--primary-color);
 }
 
 /* MENU END */
-
-
 
 /* RESERVATION */
 
@@ -527,24 +509,25 @@ main .reservation .container-custom .form-wrapper form .form-row {
   grid-gap: 1rem;
 }
 
-main 
-.reservation 
-.container-custom
-.form-wrapper 
-form 
-.form-row 
-.input-container {
+main
+  .reservation
+  .container-custom
+  .form-wrapper
+  form
+  .form-row
+  .input-container {
   position: relative;
   width: 100%;
 }
 
-main 
-.reservation 
-.container-custom
-.form-wrapper 
-form 
-.form-row 
-.input-container label {
+main
+  .reservation
+  .container-custom
+  .form-wrapper
+  form
+  .form-row
+  .input-container
+  label {
   font-family: var(--poppins);
   color: var(--text-grey);
   position: absolute;
@@ -555,20 +538,24 @@ form
   pointer-events: none;
 }
 
-main 
-.reservation 
-.container-custom
-.form-wrapper 
-form 
-.form-row 
-.input-container input:focus ~ label,
-main 
-.reservation 
-.container-custom
-.form-wrapper 
-form 
-.form-row 
-.input-container input:valid ~ label {
+main
+  .reservation
+  .container-custom
+  .form-wrapper
+  form
+  .form-row
+  .input-container
+  input:focus
+  ~ label,
+main
+  .reservation
+  .container-custom
+  .form-wrapper
+  form
+  .form-row
+  .input-container
+  input:valid
+  ~ label {
   top: -1px;
   left: 2%;
   font-size: 0.8rem;
@@ -598,7 +585,7 @@ main .reservation .container-custom .form-wrapper .btn-reservation {
   font-family: var(--poppins);
   font-size: 1rem;
   color: var(--white);
-  padding: .7rem;
+  padding: 0.7rem;
   margin-top: 2rem;
   transition: 0.3s;
   width: 100%;
@@ -659,7 +646,7 @@ main .reservation .container-custom .form-wrapper .btn-reservation:hover {
   color: var(--primary-color);
 }
 
-.contact-item h3{
+.contact-item h3 {
   color: var(--text-grey);
 }
 
@@ -677,60 +664,56 @@ main .reservation .container-custom .form-wrapper .btn-reservation:hover {
   color: var(--primary-color);
 }
 
-
 /* END MAIN CONTENT */
 
 /* FOOTER CONTENT */
 
-footer.footer{
-    position: relative;
-    background: #0f0f0f;
-    color: var(--white);
-    align-items: center;
-    height: 100%;
+footer.footer {
+  position: relative;
+  background: #0f0f0f;
+  color: var(--white);
+  align-items: center;
+  height: 100%;
 }
 
-footer.footer .container-custom{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem 5rem;
+footer.footer .container-custom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem 5rem;
 }
 
-
-footer.footer .container-custom .footer-item{
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
-    height: 100%;
-
+footer.footer .container-custom .footer-item {
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 100%;
 }
 
-footer.footer .container-custom .footer-item p{
-    color: var(--text-grey);
-}
-
-footer.footer .container-custom .insta-img img{
-    height: 5rem;
-    width: 5rem;
-    object-fit: cover;
-    margin: .2rem;
-}
-
-footer.footer .container-custom .follow i{
-  transform: scale(1.5);
-  padding: 1rem .5rem;
+footer.footer .container-custom .footer-item p {
   color: var(--text-grey);
 }
 
-footer.footer .container-custom .follow i:hover{
+footer.footer .container-custom .insta-img img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+  margin: 0.2rem;
+}
+
+footer.footer .container-custom .follow i {
+  transform: scale(1.5);
+  padding: 1rem 0.5rem;
+  color: var(--text-grey);
+}
+
+footer.footer .container-custom .follow i:hover {
   color: var(--primary-color);
 }
 
-footer.footer .rights{
+footer.footer .rights {
   padding: 1rem;
   color: var(--text-grey);
 }
-
 
 /* media queries */
 
@@ -741,8 +724,7 @@ footer.footer .rights{
 }
 
 @media only screen and (max-width: 786px) {
-
-    /* NAVIGATON */
+  /* NAVIGATON */
 
   .nav .nav-menu .toggle-collapse {
     display: initial;
@@ -760,16 +742,15 @@ footer.footer .rights{
     padding-top: 20vh;
   }
 
-/* ABOUT SECTION */
+  /* ABOUT SECTION */
 
   main .about .container-custom .address {
     padding: 2vh !important;
   }
 
-/* END ABOUT SECTION */
+  /* END ABOUT SECTION */
 
-
-/* MENU SECTION */
+  /* MENU SECTION */
 
   main .menu .container-custom .btn-container {
     display: none;
@@ -788,10 +769,9 @@ footer.footer .rights{
     padding: 2rem 0;
   }
 
-/* END MENU SECTION */
+  /* END MENU SECTION */
 
-
-/* RESERVATION SECTION */
+  /* RESERVATION SECTION */
 
   main .reservation .container-custom .form-wrapper {
     padding: initial;
@@ -800,8 +780,6 @@ footer.footer .rights{
   main .reservation .container-custom .form-wrapper form .form-row {
     grid-template-columns: 1fr;
   }
-
-  
 }
 
 @media only screen and (max-width: 1240px) {
@@ -823,7 +801,7 @@ footer.footer .rights{
     grid-template-columns: 1fr;
   }
 
-  footer.footer .container-custom{
+  footer.footer .container-custom {
     grid-template-columns: 1fr;
     grid-gap: 4rem;
   }
