@@ -6,6 +6,8 @@ const menu = [
         price: 15.99,
         img: "./img/item-1.jpeg",
         desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+        fade: "right",
+        delay: "100",
     },
     {
         id: 2,
@@ -14,6 +16,8 @@ const menu = [
         price: 13.99,
         img: "./img/item-2.jpeg",
         desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
+        fade: "left",
+        delay: "100",
     },
     {
         id: 3,
@@ -22,6 +26,8 @@ const menu = [
         price: 6.99,
         img: "./img/item-3.jpeg",
         desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
+        fade: "right",
+        delay: "200",
     },
     {
         id: 4,
@@ -30,6 +36,8 @@ const menu = [
         price: 20.99,
         img: "./img/item-4.jpeg",
         desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
+        fade: "left",
+        delay: "200",
     },
     {
         id: 5,
@@ -38,6 +46,8 @@ const menu = [
         price: 22.99,
         img: "./img/item-5.jpeg",
         desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
+        fade: "right",
+        delay: "300",
     },
     {
         id: 6,
@@ -46,6 +56,8 @@ const menu = [
         price: 18.99,
         img: "./img/item-6.jpeg",
         desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
+        fade: "left",
+        delay: "300",
     },
     {
         id: 7,
@@ -54,6 +66,8 @@ const menu = [
         price: 8.99,
         img: "./img/item-7.jpeg",
         desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
+        fade: "right",
+        delay: "400",
     },
     {
         id: 8,
@@ -62,6 +76,8 @@ const menu = [
         price: 12.99,
         img: "./img/item-8.jpeg",
         desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
+        fade: "left",
+        delay: "400",
     },
     {
         id: 9,
@@ -70,6 +86,8 @@ const menu = [
         price: 16.99,
         img: "./img/item-9.jpeg",
         desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+        fade: "right",
+        delay: "500",
     },
     {
         id: 10,
@@ -78,6 +96,8 @@ const menu = [
         price: 39.99,
         img: "./img/item-10.jpeg",
         desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+        fade: "left",
+        delay: "500",
     },
 ];
 
@@ -113,6 +133,8 @@ window.addEventListener('DOMContentLoaded', function(){
         const sectionCenter = document.querySelector('.section-center');
         const dishes = document.createElement('article');
         dishes.className = 'menu-item';
+        dishes.setAttribute("data-aos", `fade-${item.fade}`)
+        dishes.setAttribute("data-aos-delay", `${item.delay}`)
     
         dishes.innerHTML = 
             `<div class="photo-container">
@@ -164,6 +186,15 @@ function changeImg(){
 }
 
 window.onload = changeImg;
+
+AOS.init(
+    {
+        offset: 200,
+        delay: 0,
+        duration: 500,
+        
+    }
+);
 
 
 

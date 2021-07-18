@@ -14,6 +14,9 @@
         crossorigin="anonymous" />
 
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom styling -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -22,7 +25,7 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-menu flex-row">
-            <div class="nav-brand">
+            <div class="nav-brand" data-aos="fade-right" data-aos-delay="100">
                 <a href="#">Aroma's Kitchen</a>
             </div>
             <div class="toggle-collapse">
@@ -31,7 +34,7 @@
                 </div>
             </div>
             <div>
-                <ul class="nav-items">
+                <ul class="nav-items" data-aos="fade-down" data-aos-delay="200">
                     <li class="nav-link home-link"><a href="#home">Home</a></li>
                     <li class="nav-link about-link"><a href="#about">About</a></li>
                     <li class="nav-link menu-link"><a href="#menu">Menu</a></li>
@@ -39,7 +42,7 @@
                     <li class="nav-link contact-link"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="social text-grey">
+            <div class="social text-grey" data-aos="fade-left" data-aos-delay="100">
                 <a href="#" title="facebook"><i class="fab fa-facebook"></i></a>
                 <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
@@ -74,7 +77,7 @@
         <!-- intro -->
 
         <section class="intro-title" id="home">
-            <div class="site-background">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
                 <h1>fresh and delicious</h1>
                 <p>traditional food to delight whole family</p>
                 <button class="btn">Order Now</button>
@@ -86,11 +89,11 @@
 
         <section class="about" id="about">
             <div class="container-custom flex-column">
-                <div class="section-title">
+                <div class="section-title" data-aos="zoom-in" data-aos-delay="100">
                     <h2>About</h2>
                 </div>
 
-                <div class="location">
+                <div class="location" data-aos="fade-up" data-aos-delay="100">
                     <img name = "slide" alt="slide-img" />
 
 
@@ -109,16 +112,16 @@
 
         <section class="menu" id="menu">
             <div class="container-custom flex-column">
-                <div class="section-title">
+                <div class="section-title" data-aos="zoom-in" data-aos-delay="100">
                     <h2>Our Menu</h2>
                 </div>
                 <div class="btn-container">
-                    <button class="btn-md btn-filter">All</button>
-                    <button class="btn-md btn-filter">Breakfast</button>
-                    <button class="btn-md btn-filter">Lunch</button>
-                    <button class="btn-md btn-filter">Dinner</button>
-                    <button class="btn-md btn-filter">Drinks</button>
-                    <button class="btn-md btn-filter">Desserts</button>
+                    <button class="btn-md btn-filter" data-aos="flip-up" data-aos-delay="100">All</button>
+                    <button class="btn-md btn-filter" data-aos="flip-up" data-aos-delay="200">Breakfast</button>
+                    <button class="btn-md btn-filter" data-aos="flip-up" data-aos-delay="300">Lunch</button>
+                    <button class="btn-md btn-filter" data-aos="flip-up" data-aos-delay="400">Dinner</button>
+                    <button class="btn-md btn-filter" data-aos="flip-up" data-aos-delay="500">Drinks</button>
+                    <button class="btn-md btn-filter" data-aos="flip-up" data-aos-delay="600">Desserts</button>
                 </div>
 
                 <div class="section-center">
@@ -129,56 +132,56 @@
 
         <section class="reservation" id="reservation">
             <div class="container-custom flex-column">
-                <div class="section-title">
+                <div class="section-title" data-aos="zoom-in" data-aos-delay="100">
                     <h2>Make a Reservaion</h2>
                 </div>
 
                 <div class="form-wrapper">
                     <form action="" class="flex-column">
                         <div class="name-group form-row">
-                            <div class="input-container">
+                            <div class="input-container" data-aos="fade-right" data-aos-delay="100">
                                 <input type="text" class="first-name" title="first-name" required>
                                 <label for="first-name">First Name</label>
                             </div>
-                            <div class="input-container">
+                            <div class="input-container" data-aos="fade-left" data-aos-delay="100">
                                 <input type="text" class="last-name" title="last-name" required>
                                 <label for="last-name">Last Name</label>
                             </div>
                         </div>
 
                         <div class="general-info form-row">
-                            <div class="input-container">
+                            <div class="input-container" data-aos="fade-right" data-aos-delay="200">
                                 <input type="text" class="phone-number" title="phone-number" required>
                                 <label for="phone-number">Phone</label>
                             </div>
-                            <div class="input-container">
+                            <div class="input-container" data-aos="fade-left" data-aos-delay="200">
                                 <input type="email" class="email" title="email" required>
                                 <label for="email">Email</label>
                             </div>
                         </div>
 
                         <div class="date form-row">
-                            <div class="input-container">
+                            <div class="input-container" data-aos="fade-right" data-aos-delay="300">
                                 <input id="date" type="date" title="date" required>
                             </div>
-                            <div class="input-container">
+                            <div class="input-container" data-aos="fade-left" data-aos-delay="300">
                                 <input id="time" type="time" title="date" required>
                             </div>
                         </div>
 
                         <div class="guest-number form-row">
-                            <div class="input-container">
+                            <div class="input-container" data-aos="fade-right" data-aos-delay="400">
                                 <input type="text" class="guest" title="guests" required>
                                 <label for="guests">Number of Guests</label>
                             </div>
-                            <div class="input-container">
+                            <div class="input-container" data-aos="fade-left" data-aos-delay="400">
                                 <input type="text" class="comment" title="comments" required>
                                 <label for="comment">Comments</label>
                             </div>
                         </div>
 
                         <div>
-                            <input type="submit" value="Submit" class="btn-reservation">
+                            <input type="submit" value="Submit" class="btn-reservation" data-aos="flip-up" data-aos-delay="500">
                         </div>
                     </form>
                 </div>
@@ -188,25 +191,25 @@
 
         <section class="contact" id="contact">
             <div class="container-custom flex-column">
-                <div class="section-title">
+                <div class="section-title" data-aos="zoom-in" data-aos-delay="100">
                     <h2>Contact Us</h2>
                 </div>
                 <div class="contact-wrapper flex-row">
-                    <div class="contact-item contact-address flex-column">
+                    <div class="contact-item contact-address flex-column" data-aos="flip-up" data-aos-delay="100">
                         <header>Address</header>
                         <h3>28 Neon Tower, New York City, USA</h3>
                     </div>
-                    <div class="contact-item contact-email flex-column">
+                    <div class="contact-item contact-email flex-column" data-aos="flip-up" data-aos-delay="200">
                         <header>Email</header>
                         <h3>you@gmail.com</h3>
                         <h3>company@gmail.com</h3>
                     </div>
-                    <div class="contact-item contact-phone flex-column">
+                    <div class="contact-item contact-phone flex-column" data-aos="flip-up" data-aos-delay="300">
                         <header>Phone</header>
                         <h3>+119572023</h3>
                         <h3>+118959374</h3>
                     </div>
-                    <div class="contact-item contact-social flex-column">
+                    <div class="contact-item contact-social flex-column" data-aos="flip-up" data-aos-delay="400">
                         <header>Social Media</header>
                         <div class="socials">
                             <i class="fab fa-facebook"></i>
@@ -224,12 +227,12 @@
 
         <footer class="footer flex-column">
             <div class="container-custom">
-                <div class="about-us footer-item">
+                <div class="about-us footer-item" data-aos="fade-right" data-aos-delay="100">
                     <h3>About Us</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod eaque amet animi magni
                         consectetur doloribus ipsam, ullam tempora quos.</p>
                 </div>
-                <div class="instagram footer-item">
+                <div class="instagram footer-item" data-aos="zoom-in" data-aos-delay="100">
                     <h3>Instagram</h3>
                     <div class="flex-row insta-img">
                         <img src="./img/item-1.jpeg" alt="">
@@ -242,7 +245,7 @@
                         <img src="./img/item-6.jpeg" alt="">
                     </div>
                 </div>
-                <div class="follow footer-item">
+                <div class="follow footer-item" data-aos="fade-left" data-aos-delay="100">
                     <h3>Social Media</h3>
                     <div>
                         <i class="fab fa-facebook"></i>
@@ -260,6 +263,8 @@
     </main>
 
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- CUSTOM JAVASCRIPT -->
     <script src="./js/app.js"></script>
