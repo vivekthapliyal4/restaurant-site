@@ -117,6 +117,41 @@ button.btn {
   }
 }
 
+/* LOADER */
+
+.loader{
+  z-index: 99999;
+  border: #f4f4f4 solid 1rem;
+  border-top: var(--primary-color) solid .8rem;
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+  from {
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: var(--white);
+  height: 100%;
+  width: 100%;
+}
+
 /* NAVIGATION */
 
 .nav {
