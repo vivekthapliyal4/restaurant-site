@@ -110,7 +110,7 @@ const mobToggle = document.querySelector('.mob-toggle');
 const mobLink = document.querySelectorAll('.mob-link');
 
 
-function toggleActive(){
+function toggleActive() {
     mobileNav.classList.toggle('active')
 }
 
@@ -127,16 +127,16 @@ mobLink.forEach(btn => {
 
 // ADDING MENU ITEMS
 
-window.addEventListener('DOMContentLoaded', function(){
- 
-    menu.forEach(function addItem(item){
+window.addEventListener('DOMContentLoaded', function () {
+
+    menu.forEach(function addItem(item) {
         const sectionCenter = document.querySelector('.section-center');
         const dishes = document.createElement('article');
         dishes.className = 'menu-item';
         dishes.setAttribute("data-aos", `fade-${item.fade}`)
         dishes.setAttribute("data-aos-delay", `${item.delay}`)
-    
-        dishes.innerHTML = 
+
+        dishes.innerHTML =
             `<div class="photo-container">
                 <img src=${item.img} class="photo" alt=${item.title}>
             </div>
@@ -148,7 +148,7 @@ window.addEventListener('DOMContentLoaded', function(){
                 </header>
                 <p class="item-text">${item.desc}</p>
             </div>`
-    
+
         sectionCenter.appendChild(dishes);
     });
 });
@@ -157,7 +157,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
 // NAVBAR SCROLL EFFECT 
 
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', function () {
     let header = this.document.querySelector('.nav');
     let windowPositon = window.scrollY > 0;
     header.classList.toggle('scroll-active', windowPositon);
@@ -174,25 +174,30 @@ images[0] = 'img/slide-1.jpg';
 images[1] = 'img/slide-2.jpg';
 images[2] = 'img/slide-3.jpg';
 
-function changeImg(){
+function changeImg() {
     document.slide.src = images[i];
-    if(i < images.length -1){
+    if (i < images.length - 1) {
         i++;
-    }else{
+    } else {
         i = 0;
     }
 
-   setTimeout('changeImg()', time);
+    setTimeout('changeImg()', time);
 }
 
-window.onload = changeImg;
+
+
+window.onload = function () {
+    changeImg();
+    document.querySelector('.loader-wrapper').style.display = 'none';
+}
 
 AOS.init(
     {
         offset: 200,
         delay: 0,
         duration: 500,
-        
+
     }
 );
 
